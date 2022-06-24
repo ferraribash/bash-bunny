@@ -1,8 +1,8 @@
 #!/bin/bash
-#Title:   powercat - Powershell v 2.0
+#Title: powercat
 #Author:  Thiago Ferrari
 #Version: 1.0
-#Target: Windows with PS2
+#Target: Windows
 #credits to @besimorhino and https://github.com/rexpository/reverseshell-powercat-v2
 #change the IP address
 
